@@ -13,7 +13,7 @@ module.exports = function (params) {
         state = new StateEmitter();
 
     return {
-        connect: function (url) {
+        connect: function ({ url }) {
             var
                 setDisconnected = function () {
                     state.next(disconnected);

@@ -10,21 +10,20 @@
   "author": "Spotware Services <connect@spotware.com>",
   "private": true,
   "scripts": {
-    "start": "npm test",
-    "cover": "istanbul cover --include-all-sources jasmine",
-    "test": "jasmine"
-  },
-  "devDependencies": {
-    "state-emitter": "spotware/state-emitter#v2.0.2",
-    "connect-js-adapter-tls": "spotware/connect-js-adapter-tls#v3.0.3",
-    "connect-js-codec": "spotware/connect-js-codec#v1.0.2",
-    "connect-js-encode-decode": "spotware/connect-js-encode-decode",
-    "connect-protobuf-messages": "spotware/connect-protobuf-messages#v2.0.0",
-    "istanbul": "0.4.2",
-    "jasmine": "2.5.3",
-    "ws": "1.0.1"
+    "cover": "istanbul cover --include-all-sources",
+    "test": "yarn cover jasmine"
   },
   "dependencies": {
     "hat": "0.0.3"
+  },
+  "devDependencies": {
+    "connect-js-adapter-tls": "jeremyjs/connect-js-adapter-tls#jeremyjs.update-connect-parameter-interface",
+    "connect-js-codec": "jeremyjs/connect-js-codec#jeremyjs.update-package-versions",
+    "connect-js-encode-decode": "jeremyjs/connect-js-encode-decode#jeremyjs.update-openapi-version-in-tests",
+    "connect-protobuf-messages": "jeremyjs/connect-protobuf-messages#jeremyjs.update-input-format",
+    "istanbul": "0.4.2",
+    "jasmine": "3.3.1",
+    "state-emitter": "spotware/state-emitter#v2.0.2",
+    "ws": "1.0.1"
   }
 }
