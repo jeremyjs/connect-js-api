@@ -17,12 +17,12 @@
     "hat": "0.0.3"
   },
   "devDependencies": {
-    "connect-js-adapter-tls": "jeremyjs/connect-js-adapter-tls#jeremyjs.update-connect-parameter-interface",
-    "connect-js-codec": "jeremyjs/connect-js-codec#jeremyjs.update-package-versions",
-    "connect-js-encode-decode": "jeremyjs/connect-js-encode-decode#jeremyjs.update-openapi-version-in-tests",
-    "connect-protobuf-messages": "jeremyjs/connect-protobuf-messages#jeremyjs.update-input-format",
+    "connect-js-adapter-tls": "jeremyjs/connect-js-adapter-tls#v4.0.0",
+    "connect-js-codec": "jeremyjs/connect-js-codec#v1.1.0",
+    "connect-js-encode-decode": "jeremyjs/connect-js-encode-decode#v1.0.1",
     "istanbul": "0.4.2",
     "jasmine": "3.3.1",
+    "open-api-protocol": "jeremyjs/open-api-protocol#v3.0.0",
     "state-emitter": "spotware/state-emitter#v2.0.2",
     "ws": "1.0.1"
   }

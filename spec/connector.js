@@ -1,7 +1,7 @@
 const createAdapter = require('connect-js-adapter-tls')
 const { Codec, codec: createCodec } = require('connect-js-codec')
 const EncodeDecode = require('connect-js-encode-decode')
-const ProtoMessages = require('connect-protobuf-messages')
+const OpenApiProtocol = require('open-api-protocol')
 
 const Connector = require('../lib/connector')
 const state = require('../lib/state')
@@ -20,10 +20,7 @@ describe('Connector', function () {
   beforeAll(function () {
     encodeDecode = new EncodeDecode()
 
-    protocol = new ProtoMessages([
-      { file: 'CommonMessages.proto'  },
-      { file: 'OpenApiMessages.proto' },
-    ])
+    protocol = new OpenApiProtocol()
 
     codec = new Codec(encodeDecode, protocol)
     
